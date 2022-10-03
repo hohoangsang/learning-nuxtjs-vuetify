@@ -1,31 +1,23 @@
 <template>
-  <v-app-bar app fixed height="100" flat hide-on-scroll dense class="bgNav">
-    <img srcset="@/assets/images/bella-olonje.png 2x" alt="Bella olonje" contain />
+  <v-app-bar app fixed height="120" flat hide-on-scroll dense class="bgNav">
+    <img srcset="@/assets/images/bella-olonje.png 2x" alt="Bella olonje" contain class="ma-5" />
 
     <v-spacer />
 
-    <div>
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-heart</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
-      </v-btn>
-    </div>
-
-    <v-spacer />
-
-    <v-hover :v-slot="{ hover }">
-      <v-btn plain :class="['hover ? red--text : null']">
-        <span>Login</span>
-        <v-icon right>mdi-login</v-icon>
+    <v-hover v-for="link in linkList" :key="link.href" v-slot="{ hover }" class="ma-4">
+      <v-btn
+        nuxt
+        :to="link.href"
+        tile
+        plain
+        :style="hover && 'border-bottom: 2px solid red; color: red'"
+        exact-active-class="red--text active-link"
+      >
+        {{ link.text }}
       </v-btn>
     </v-hover>
+
+    <v-spacer />
 
     <v-switch
       v-model="$vuetify.theme.dark"
@@ -35,11 +27,41 @@
       hide-details
       label="Dark mode"
     />
+
+    <v-hover v-slot="{ hover }" class="ma-4">
+      <v-btn tile plain :style="hover && 'color: red'">
+        <span>Login</span>
+        <v-icon right> mdi-login </v-icon>
+      </v-btn>
+    </v-hover>
   </v-app-bar>
 </template>
 
 <script>
 export default {
-  name: 'NavbarComponent'
+  name: 'NavbarComponent',
+
+  data () {
+    return {
+      linkList: [
+        { text: 'Home', href: '/' },
+        { text: 'About', href: '/about' },
+        { text: 'Contact', href: '/contact' },
+        { text: 'News', href: '/news' }
+      ]
+    }
+  },
+
+  mounted () {
+    const url = new URL(window.location)
+
+    console.log(url)
+  }
 }
 </script>
+
+<style scoped>
+    .active-link {
+        border-bottom: 2px solid red;
+    }
+</style>
