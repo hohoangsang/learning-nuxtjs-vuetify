@@ -1,199 +1,88 @@
 <template>
   <div>
-    <Hero />
-    <v-row justify="center" align="center">
-      <v-col cols="12" sm="8" md="6">
-        <v-card class="logo py-4 d-flex justify-center">
-          <NuxtLogo />
-          <VuetifyLogo />
-        </v-card>
-        <v-card>
-          <v-card-title class="headline"> Welcome to the Vuetify + Nuxt.js template </v-card-title>
-          <v-card-text>
-            <p>
-              Vuetify is a progressive Material Design component framework for Vue.js. It was
-              designed to empower developers to create amazing applications.
-            </p>
-            <p>
-              For more information on Vuetify, check out the
-              <a href="https://vuetifyjs.com" target="_blank" rel="noopener noreferrer">
-                documentation </a
-              >.
-            </p>
-            <p>
-              If you have questions, please join the official
-              <a
-                href="https://chat.vuetifyjs.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="chat"
-              >
-                discord </a
-              >.
-            </p>
-            <p>
-              Find a bug? Report it on the github
-              <a
-                href="https://github.com/vuetifyjs/vuetify/issues"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="contribute"
-              >
-                issue board </a
-              >.
-            </p>
-            <p>
-              Thank you for developing with Vuetify and I look forward to bringing more exciting
-              features in the future.
-            </p>
-            <div class="text-xs-right">
-              <em><small>&mdash; John Leider</small></em>
-            </div>
-            <hr class="my-3" />
-            <a href="https://nuxtjs.org/" target="_blank" rel="noopener noreferrer">
-              Nuxt Documentation
-            </a>
-            <br />
-            <a href="https://github.com/nuxt/nuxt.js" target="_blank" rel="noopener noreferrer">
-              Nuxt GitHub
-            </a>
-          </v-card-text>
-          <v-card-actions>
-            <v-spacer />
-            <v-btn color="primary" nuxt to="/inspire"> Continue </v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-col>
-      <v-col cols="12" sm="8" md="6">
-        <v-card class="logo py-4 d-flex justify-center">
-          <NuxtLogo />
-          <VuetifyLogo />
-        </v-card>
-        <v-card>
-          <v-card-title class="headline"> Welcome to the Vuetify + Nuxt.js template </v-card-title>
-          <v-card-text>
-            <p>
-              Vuetify is a progressive Material Design component framework for Vue.js. It was
-              designed to empower developers to create amazing applications.
-            </p>
-            <p>
-              For more information on Vuetify, check out the
-              <a href="https://vuetifyjs.com" target="_blank" rel="noopener noreferrer">
-                documentation </a
-              >.
-            </p>
-            <p>
-              If you have questions, please join the official
-              <a
-                href="https://chat.vuetifyjs.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="chat"
-              >
-                discord </a
-              >.
-            </p>
-            <p>
-              Find a bug? Report it on the github
-              <a
-                href="https://github.com/vuetifyjs/vuetify/issues"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="contribute"
-              >
-                issue board </a
-              >.
-            </p>
-            <p>
-              Thank you for developing with Vuetify and I look forward to bringing more exciting
-              features in the future.
-            </p>
-            <div class="text-xs-right">
-              <em><small>&mdash; John Leider</small></em>
-            </div>
-            <hr class="my-3" />
-            <a href="https://nuxtjs.org/" target="_blank" rel="noopener noreferrer">
-              Nuxt Documentation
-            </a>
-            <br />
-            <a href="https://github.com/nuxt/nuxt.js" target="_blank" rel="noopener noreferrer">
-              Nuxt GitHub
-            </a>
-          </v-card-text>
-          <v-card-actions>
-            <v-spacer />
-            <v-btn color="primary" nuxt to="/inspire"> Continue </v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-col>
-      <v-col cols="12" sm="8" md="6">
-        <v-card class="logo py-4 d-flex justify-center">
-          <NuxtLogo />
-          <VuetifyLogo />
-        </v-card>
-        <v-card>
-          <v-card-title class="headline"> Welcome to the Vuetify + Nuxt.js template </v-card-title>
-          <v-card-text>
-            <p>
-              Vuetify is a progressive Material Design component framework for Vue.js. It was
-              designed to empower developers to create amazing applications.
-            </p>
-            <p>
-              For more information on Vuetify, check out the
-              <a href="https://vuetifyjs.com" target="_blank" rel="noopener noreferrer">
-                documentation </a
-              >.
-            </p>
-            <p>
-              If you have questions, please join the official
-              <a
-                href="https://chat.vuetifyjs.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="chat"
-              >
-                discord </a
-              >.
-            </p>
-            <p>
-              Find a bug? Report it on the github
-              <a
-                href="https://github.com/vuetifyjs/vuetify/issues"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="contribute"
-              >
-                issue board </a
-              >.
-            </p>
-            <p>
-              Thank you for developing with Vuetify and I look forward to bringing more exciting
-              features in the future.
-            </p>
-            <div class="text-xs-right">
-              <em><small>&mdash; John Leider</small></em>
-            </div>
-            <hr class="my-3" />
-            <a href="https://nuxtjs.org/" target="_blank" rel="noopener noreferrer">
-              Nuxt Documentation
-            </a>
-            <br />
-            <a href="https://github.com/nuxt/nuxt.js" target="_blank" rel="noopener noreferrer">
-              Nuxt GitHub
-            </a>
-          </v-card-text>
-          <v-card-actions>
-            <v-spacer />
-            <v-btn color="primary" nuxt to="/inspire"> Continue </v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-col>
-    </v-row>
+    <HeroFirst />
+
+    <v-container style="max-width: 885px">
+      <v-divider />
+    </v-container>
+
+    <h3
+      class="text-h3 text-center font-weight-medium"
+      style="margin-top: 72px; margin-bottom: 59px"
+    >
+      How the app works
+    </h3>
+
+    <!-- main content -->
+    <v-container>
+      <v-row
+        justify="space-around"
+        align="center"
+        no-gutters
+        v-for="(content, i) in mainContent"
+        :key="i"
+        :class="[content.isReverse ? 'flex-row-reverse' : null]"
+        style="margin-bottom: 200px"
+      >
+        <v-img
+          style="
+            width: 100%;
+            max-width: 300px;
+            filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
+          "
+          :src="require('~/assets/images/main-pic2.png')"
+          :alt="content.title"
+        />
+        <div style="max-width: 560px">
+          <h5 class="text-h6 my-4" style="color: #fa4a0c; line-height: calc(36 / 24)">
+            {{ content.title }}
+          </h5>
+          <p class="font-weight-bold" style="line-height: calc(57 / 40); font-size: 40px">
+            {{ content.description }}
+          </p>
+          <span
+            class="font-weight-light"
+            style="display: block; max-width: 467px; font-size: 24px"
+            >{{ content.span }}</span
+          >
+        </div>
+      </v-row>
+    </v-container>
+
+    <HeroSecond />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+
+  data () {
+    return {
+      mainContent: [
+        {
+          title: 'Create an account',
+          description: 'Create/login to an existing account to get started',
+          span: 'An account is created with your email and a desired password',
+          imageLink: '~/assets/images/main-pic1.png',
+          isReverse: false
+        },
+        {
+          title: 'Explore varieties',
+          description: 'Shop for your favorites meal as e dey hot.',
+          span: 'Shop for your favorite meals or drinks and enjoy while doing it.',
+          imageLink: '~/assets/images/main-pic2.png',
+          isReverse: true
+        },
+        {
+          title: 'Checkout',
+          description: 'When you done check out and get it delivered.',
+          span: 'When you done check out and get it delivered with ease.',
+          imageLink: '~/assets/images/main-pic3.png',
+          isReverse: false
+        }
+      ]
+    }
+  }
 }
 </script>
