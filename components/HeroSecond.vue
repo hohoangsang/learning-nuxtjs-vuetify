@@ -5,10 +5,10 @@
         <v-theme-provider dark>
           <v-container fill-height style="max-width: 850px">
             <v-row align="center" justify="center" class="white--text">
-              <v-col tag="h2" class="text-center">Download the app now.</v-col>
+              <v-col tag="h2" class="text-center" style="font-size: 2.5rem; line-height: calc(57/40)">Download the app now.</v-col>
 
               <v-col cols="12" class="text-center">
-                <span>Available on your favorite store. Start your premium experience now</span>
+                <span style="font-size: 1.5rem; line-height: calc(38/24)" class="font-weight-light">Available on your favorite store. Start your premium experience now</span>
               </v-col>
 
               <v-col cols="12" class="mx-auto" style="position: relative;">

@@ -1,6 +1,6 @@
 <template>
   <v-app-bar app fixed height="120" flat hide-on-scroll dense class="bgNav">
-    <img srcset="@/assets/images/bella-olonje.png 2x" alt="Bella olonje" contain class="ma-5" />
+    <img srcset="@/assets/images/bella-olonje.png 2x" alt="Bella olonje" contain class="ma-5" style="width: 100%; max-width: 206px"/>
 
     <v-spacer />
 
